@@ -1,0 +1,43 @@
+npm install
+
+git init (깃 저장소 생성)
+git status (상태 확인)
+
+(node_modules는 올리지 않아도됨)
+.gitignore 파일 생성 -> node_modules 입력
+
+git rm --cached node_modules -r
+
+git add .git
+
+git commit -m "first commit"
+
+git push (origin master)
+
+
+<secure shell 설정해야함>
+
+
+<포트 제거 후 재시작>
+- address already in use 에러
+netstat -a -n -o
+taskkill /f /pid ____
+
+
+<전체>
+기존 리포지토리 깔끔하게 pull / push
+git pull
+git add .
+git commit -m "clean push"
+git push
+기존 리포지토리 remote 제거
+git remote remove origin
+새 리포지토리 remote 추가
+git remote add origin https://github.com/계정/리포지토리
+
+
+<CRLF>
+git config --global core.autocrlf true
+
+<npm 종료>
+ctrl C
